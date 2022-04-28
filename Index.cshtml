@@ -1,0 +1,29 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model task_product.Models.Product
+@{
+}
+<h1>PRODUCT</h1>
+<form asp-action="Create" asp-controller="Product" method="post">
+    <div>
+        <label asp-for="Prodname"></label>
+        <input asp-for="Prodname" />
+        <span asp-validation-for="Prodname"></span>
+    </div>
+    <div>
+        <label asp-for="price"></label>
+        <input asp-for="price" />
+        <span asp-validation-for="price"></span>
+    </div>
+    <div>
+        <label asp-for="Datemanu"></label>
+        <input asp-for="Datemanu" />
+        <span asp-validation-for="Datemanu"></span>
+    </div>
+    <div>
+        <input type="submit" value="Create" />
+    </div>
+
+</form>
+
